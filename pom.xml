@@ -5,7 +5,7 @@
     <groupId>org.reficio</groupId>
     <artifactId>p2-maven-plugin</artifactId>
     <packaging>maven-plugin</packaging>
-    <version>1.4.0-SNAPSHOT</version>
+    <version>1.4.1-SNAPSHOT</version>
     <name>p2-maven-plugin</name>
     <url>http://projects.reficio.org/${project.artifactId}/${project.version}</url>
     <description>Maven plugin for the automation of jars wrapping and p2 site generation</description>
@@ -643,7 +643,7 @@
         <profile>
             <id>it</id>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
             </activation>
             <build>
                 <plugins>
@@ -692,21 +692,5 @@
             </build>
         </profile>
     </profiles>
-
-    <repositories>
-        <!-- required to get the reficio-skin -->
-        <repository>
-            <id>reficio</id>
-            <url>http://repo.reficio.org/maven/</url>
-        </repository>
-    </repositories>
-
-    <distributionManagement>
-        <repository>
-            <id>reficio</id>
-            <name>Reficio Maven Repository</name>
-            <url>scp://${reficio.server}/var/www/repo/maven</url>
-        </repository>
-    </distributionManagement>
 
 </project>

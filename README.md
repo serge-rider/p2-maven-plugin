@@ -1,5 +1,8 @@
 # p2-maven-plugin [![Build Status](https://secure.travis-ci.org/reficio/p2-maven-plugin.png)](http://travis-ci.org/reficio/p2-maven-plugin)
 
+#### Patched by https://github.com/serge-rider because reficio.org is not available anymore.
+#### We need to find another solution for maven->p2 packaging
+
 ## Truly mavenize your Eclipse RCP project!
 
 ### Intro
